@@ -3,27 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./index.css" />
+    <meta name="description" content="SHOP.CO - internet clothing store" />
+    <meta name="author" content="Kaygorodov Andrew" />
+    <meta name="theme-color" content="#000000" />
+
+    <script src="./index.js" defer></script>
+
+    <link rel="stylesheet" href="./index.css" type="text/css" />
     <title>SHOP.CO</title>
   </head>
   <body>
-    <div class="auth__message">
-      Sign up and get 20% off to your first order.
-      <span class="auth__message-link">Sign Up Now</span>
+    <div class="auth">
+      <div class="container auth__container">
+        <div></div>
+        <p class="auth__text">
+          Sign up and get 20% off to your first order.
+          <a href="#" class="auth__text-link">Sign Up Now</a>
+        </p>
+        <img src="./images/icons/icon-cross.png" alt="cross" />
+      </div>
     </div>
 
     <header class="header">
-      <div class="header__content">
+      <div class="header__container container">
         <a href="#"><img src="./images/logo/SHOP.CO.svg" alt="logo" /></a>
         <div class="header__nav">
           <ul class="header__list">
-            <li class="header__item"><a href="#">Shop</a></li>
+            <li class="header__item">
+              <a href="#"
+                >Shop <img src="./images/icons/header-arrow.png" alt="arrow"
+              /></a>
+            </li>
             <li class="header__item"><a href="#">On Sale</a></li>
             <li class="header__item"><a href="#">New Arrivals</a></li>
             <li class="header__item"><a href="#">Brands</a></li>
           </ul>
         </div>
         <div class="search">
+          <img src="./images/icons/icon-search.png" alt="search" />
           <input
             type="text"
             class="search__input"
@@ -40,10 +57,95 @@
     </header>
 
     <main>
-      <section class="main__find-clothes"></section>
-      <section class="main__brands"></section>
-      <section class="main__new-arrivals"></section>
-      <section class="main__top-selling"></section>
+      <section class="hero">
+        <div class="container hero__container">
+          <div class="hero__content">
+            <h1 class="hero__title">FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
+            <p class="hero__text">
+              Browse through our diverse range of meticulously crafted garments,
+              designed to bring out your individuality and cater to your sense
+              of style.
+            </p>
+            <button class="hero__button">Shop Now</button>
+            <div class="hero__stats">
+              <div class="hero__stat-value">
+                <p class="hero__quantity">200+</p>
+                <p class="hero__quantity-info">International Brands</p>
+              </div>
+              <hr class="hero__hr" />
+              <div class="hero__stat-value">
+                <p class="hero__quantity">2,000+</p>
+                <p class="hero__quantity-info">High-Quality Products</p>
+              </div>
+              <hr class="hero__hr" />
+              <div class="hero__stat-value">
+                <p class="hero__quantity">30,000+</p>
+                <p class="hero__quantity-info">Happy Customers</p>
+              </div>
+            </div>
+          </div>
+          <div class="hero__images">
+            <img
+              class="hero__image-hero"
+              src="./images/icons/hero-main.jpg"
+              alt="hero"
+            />
+            <img
+              class="hero__vector hero__vector-big"
+              src="./images/icons/image-vector-big.png"
+              alt="big"
+            />
+            <img
+              class="hero__vector hero__vector-small"
+              src="./images/icons/image-vector-small.png"
+              alt="small"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="brands">
+        <div class="container brands__container">
+          <img
+            class="brands__img"
+            src="./images/icons/logo-versace.png"
+            alt="versace"
+          />
+          <img
+            class="brands__img"
+            src="./images/icons/logo-zara.png"
+            alt="zara"
+          />
+          <img
+            class="brands__img"
+            src="./images/icons/logo-gucci.png"
+            alt="gucci"
+          />
+          <img
+            class="brands__img"
+            src="./images/icons/logo-prada.png"
+            alt="prada"
+          />
+          <img
+            class="brands__img"
+            src="./images/icons/logo-calvin-lkein.png"
+            alt="calvin lkein"
+          />
+        </div>
+      </section>
+      <section class="new-arrivals">
+        <div class="container new-arrivals__container">
+          <h2 class="new-arrivals__title">NEW ARRIVALS</h2>
+          <div class="new-arrivals__list"></div>
+          <button class="view-all new-arrivals__view-all">View All</button>
+        </div>
+      </section>
+      <section class="top-selling">
+        <div class="container top-selling__container">
+          <h2 class="top-selling__title">TOP SELLING</h2>
+          <div class="top-selling__list"></div>
+          <button class="view-all top-selling__view-all">View All</button>
+        </div>
+      </section>
       <section class="main__browse-by-dress-style"></section>
       <section class="main__our-happy-customers"></section>
     </main>
